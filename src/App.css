@@ -17,3 +17,33 @@ body {
     background-color: cadetblue;
 
 }
+
+.modal {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(116, 121, 148, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal_content {
+    min-width: 300px;
+    min-height: 200px;
+    background-color: #071a88;
+    border-radius: 12px;
+    padding: 20px 40px;
+    font-size: 27px;
+}
+
+.modal_content h1 {
+    font-size: 34px;
+    text-align: center;
+    font-weight: 700;
+    color: #ffffff;
+    border-bottom: white 2px solid;
+    padding-bottom: 5px;
+}

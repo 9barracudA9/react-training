@@ -1,16 +1,12 @@
-import React, {useState} from 'react';
+import React from 'react';
 
-const Input = ({props}) => {
-    const [value, setValue] = useState('')
-    const showValue = (e) => {
-        setValue(e.target.value)
-    }
+const Input = ({onChange, value}) => {
     return (
         <>
             <input
-                onChange={showValue}
+                onChange={onChange}
                 value={value}
-                className='py-2 px-4 border-black rounded text-xl mt-10 ml-10 '
+                className='py-2 px-4 border-gray-600 border-2 rounded-2xl text-gray-700 w-[100%] mt-6'
             />
         </>
     );

@@ -1,9 +1,10 @@
 import React from 'react';
+import clsx from "clsx";
 
-const Btn = ({...props}) => {
+const Btn = ({onClick, text, color}) => {
     return (
-        <button onClick={props.onClick} className='border-2 border-black px-4 py-2 text-xl rounded min-w-'>
-            {props.text}
+        <button onClick={onClick} className={clsx('w-[35px] h-[35px] rounded-3xl', color)}>
+            {text}
         </button>
     );
 };
