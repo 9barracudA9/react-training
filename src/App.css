@@ -37,6 +37,7 @@ body {
     border-radius: 12px;
     padding: 20px 40px;
     font-size: 27px;
+
 }
 
 .modal_content h1 {
@@ -46,4 +47,14 @@ body {
     color: #ffffff;
     border-bottom: white 2px solid;
     padding-bottom: 5px;
+}
+
+a {
+    text-shadow: #3b3939 3px 3px;
+}
+
+a:hover {
+    color: #5365c4;
+    transform: scale(1.2);
+    transition: all 0.3s;
 }

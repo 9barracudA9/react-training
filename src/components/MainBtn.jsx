@@ -1,9 +1,10 @@
 import React from 'react';
+import clsx from "clsx";
 
-const MainBtn = ({text, onClick}) => {
+const MainBtn = ({text, onClick, width}) => {
     return (
         <button
-            className='flex justify-center items-center py-2 px-4 min-w-[120px] border-2 border-white bg-blue-300 text-cyan-950 rounded-2xl '
+            className={clsx('flex justify-center items-center py-2 px-4  border-2 border-white bg-blue-300 text-cyan-950 rounded-2xl', width)}
             onClick={onClick}
         >
             {text}

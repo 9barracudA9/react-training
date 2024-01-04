@@ -28,6 +28,4 @@ const FullQuiz = () => {
     )
 
 }
-
-
 export default FullQuiz;
