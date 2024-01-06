@@ -11,12 +11,12 @@ const App = () => {
         <>
             <header
                 className='bg-gray-700 py-2 px-[60px] flex items-center justify-between gap-4 text-white shadow-gray-600 shadow-2xl
-                            text-[25px] mb-[100px]'
+                            text-[25px] mb-[50px] border-b-2 border-white'
             >
                 <Link to="/">Home Page</Link>
                 <Link to='/quiz'> Quiz </Link>
                 <Link to='/inviter'> Inviter </Link>
-                <Link to='/*'> Converter </Link>
+                <Link to='/*'> Todo List </Link>
             </header>
             <Routes>
                 <Route path='/' element={GreetPage()}/>
