@@ -3,7 +3,8 @@ import {Link, Route, Routes} from "react-router-dom";
 import FullQuiz from "./components/FullQuiz";
 import Inviter from "./components/Inviter";
 import GreetPage from "./components/GreetPage";
-import todoBody from "./components/TodoBody";
+import TodoBody from "./components/TodoBody";
+import TicTacToe from "./components/TicTacToe";
 
 
 const App = () => {
@@ -16,13 +17,16 @@ const App = () => {
                 <Link to="/">Home Page</Link>
                 <Link to='/quiz'> Quiz </Link>
                 <Link to='/inviter'> Inviter </Link>
-                <Link to='/*'> Todo List </Link>
+                <Link to='/todo'> Todo List </Link>
+                <Link to='/tic-tac-toe'> Tic Tac Toe</Link>
             </header>
             <Routes>
-                <Route path='/' element={GreetPage()}/>
-                <Route path='/quiz' element={FullQuiz()}/>
-                <Route path='/inviter' element={Inviter()}/>
-                <Route path='/*' element={todoBody()}/>
+                <Route path='/' element={<GreetPage/>}/>
+                <Route path='/quiz' element={<FullQuiz/>}/>
+                <Route path='/inviter' element={<Inviter/>}/>
+                <Route path='/todo' element={<TodoBody/>}/>
+                <Route path='tic-tac-toe' element={<TicTacToe/>}/>
+
             </Routes>
 
 

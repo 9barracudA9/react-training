@@ -13,7 +13,7 @@ const TodoBody = () => {
             id: Math.random() * 10,
             priority: priority
         }
-        if (!value) return null
+        if (!value) return
 
         setTodo(prevState => [...prevState, newTask])
         setValue("")
